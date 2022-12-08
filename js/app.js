@@ -233,7 +233,7 @@ buttonGrande.addEventListener ("click", agregarServicioCarrito);
 
 // ejecuciones
 // ---------
-fetch('https://francomaneiro.github.io/ProyectoFinalFrancoManeiro.js/')
+fetch('../json/data.json')
     .then((response) => response.json())
     .then((data) => {
         allServicios = data;
