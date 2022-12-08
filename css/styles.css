@@ -1,0 +1,285 @@
+footer {
+    background-color: lightblue;
+    padding: 50px; }
+  
+.imgFoo {
+    height: 30px; }
+  
+h2 {
+    padding: 20px; }
+  
+header {
+    background-color: lightblue; }
+    header div {
+    display: flex;
+    justify-content: flex-start; }
+    header div a img {
+    height: 190px;
+    padding: 10px; }
+
+.productoPalabra{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flechaServicios{
+    height: 100px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    overflow: auto;
+}
+.imgSec {
+    height: 400px;
+    width: 100%;
+    padding: 30px; 
+    }
+  
+.imgIndex {
+    height: 600px;
+    width: 100%;
+    padding: 10px; }
+  
+.imgAtencion {
+    height: 500px;
+    width: 100%;
+    padding: 10px; }
+  
+.imgMarcas {
+    height: 50px; }
+  
+.listaAtencion {
+    height: 80px; 
+}
+  
+
+
+.mixinFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  
+.textoIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+
+
+.textoAtencion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  
+h1 {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  
+h4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white; }
+  
+  
+main {
+    padding-bottom: 30px; }
+  
+  
+h4 {
+    padding: 10px; }
+  
+.imgIndex {
+    height: 600px; }
+    .imgIndex:hover {
+      height: 595px; }
+  
+.imgSec {
+    height: 400px; }
+    .imgSec:hover {
+      height: 395px; }
+  
+.animNav {
+    color: black; }
+    .animNav:hover {
+      color: #0000ff; }
+  
+h1 {
+    color: white; }
+    h1:hover {
+      color: black; }
+  
+li {
+    color: black; }
+    li:hover {
+      color: white; }
+  
+  
+* {
+    padding: 0;
+    margin: 0; }
+  
+li {
+    list-style: none;
+    padding: 15px; }
+  
+a {
+    text-decoration: none; }
+  
+  
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  
+ 
+  
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start; }
+  
+.txtNosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgNosotros{
+    display: flex;
+    justify-content: center;
+}
+ 
+.imgGrande{
+    height: 200px;
+    width: 30%;
+    padding: 20px;
+}
+
+.buttonGrande{
+    height: 80px;
+    width: 30%;
+}
+
+.botonGrande{
+    display: flex;
+    flex-direction: column;
+}
+
+.textH4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tamañoCarrito{
+    height: 50px;
+    cursor: pointer;
+}
+
+.navCarrito{
+    display: flex;
+}
+
+.imgCarrito{
+    height: 100px;
+}
+
+.carritoConServicios{
+    padding: 30px;
+    overflow: auto;
+}
+
+.totalContent{
+    height: 200px;
+    padding: 20px;
+}
+
+
+/* modal Content */
+
+.modalContainer {
+    width: 100%;
+    max-height: 88vh;
+    color: #0089ff;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*for the top*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modalContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #fff;
+    width: 100%;
+}
+
+.modal-header-title {
+    justify-self: start;
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.modalContainer > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modalContainer > div > img {
+    height: 70px;
+    width: 110px;
+}
+
+.total-Content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* BOTON ELIMINAR */
+.botonEliminar{
+    cursor: pointer;
+}
+
+.restar{
+    cursor: pointer;
+}
+
+.sumar{
+    cursor: pointer;
+}
+
+.botonVaciar{
+    height: 30px;
+    cursor: pointer;
+}
+
+.botonComprar{
+    height: 30px;
+    cursor: pointer;
+}
