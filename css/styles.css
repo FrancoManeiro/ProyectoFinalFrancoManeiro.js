@@ -283,3 +283,14 @@ footer {
     height: 30px;
     cursor: pointer;
 }
+
+/* carritoCounter */
+.cantidad-carrito {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    position: absolute;
+    display: none;
+}

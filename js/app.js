@@ -4,7 +4,7 @@ let allServicios = []
 let carrito
 
 if (localStorage.getItem('carrito')) {
-    carrito = JSON.parse(localStorage.getItem('carrito'))
+    carrito = JSON.parse(localStorage.getItem('carrito'));
 } else {
     carrito = []
 }
@@ -21,6 +21,7 @@ const verCarrito = document.querySelector("#verCarrito");
 const carritoConServicios = document.querySelector("#carritoConServicios")
 const totalContent = document.querySelector("#totalContent");
 const modalContainer = document.querySelector("#modalContainer");
+const cantidadCarrito = document.querySelector("#cantidadCarrito");
 
 // funciones
 // --------------
@@ -72,8 +73,9 @@ const agregarServicioCarrito = (e) => {
         showConfirmButton: false,
         timer: 800
       });
+    carritoCounter();
     localStorage.setItem('carrito', JSON.stringify(carrito));
-
+    
 }
 
 const eliminarServicio = (id) => {
@@ -83,6 +85,7 @@ const eliminarServicio = (id) => {
     });
     localStorage.setItem('carrito', JSON.stringify(carrito));
     mostrarCarritoDeCompra();
+    carritoCounter();
 }
 
 
@@ -147,7 +150,6 @@ const mostrarCarritoDeCompra = () => {
         eliminar.addEventListener("click", () => {
             eliminarServicio(product.id);
         });
-        
     });
     
     const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
@@ -167,6 +169,7 @@ const mostrarCarritoDeCompra = () => {
         carrito = [];
         localStorage.setItem('carrito', JSON.stringify(carrito));
         mostrarCarritoDeCompra();
+        carritoCounter();
     });
 
     let botonComprar = document.createElement("h5");
@@ -195,6 +198,7 @@ const mostrarCarritoDeCompra = () => {
                 carrito = [];
                 localStorage.setItem('carrito', JSON.stringify(carrito));
                 mostrarCarritoDeCompra();
+                carritoCounter();
                 modalContainer.style.display = "none";
             };
           });
@@ -210,6 +214,16 @@ const mostrarCarritoDeCompra = () => {
     
 };
 
+
+const carritoCounter = () => {
+    cantidadCarrito.style.display = "block";
+    
+    const carritoLength = carrito.length;
+    localStorage.setItem("carritoLength", JSON.stringify(carritoLength));
+    cantidadCarrito.innerHTML = JSON.parse(localStorage.getItem("carritoLength"));
+    
+};
+carritoCounter();
 
 // EventListener
 // -----------
